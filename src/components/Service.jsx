@@ -29,7 +29,7 @@ export default function Service() {
                     <CardService
                     title="UI/UX Designer"
                     text="Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum"
-                    image="../src/assets/programming.png"
+                    image="../src/assets/uiux.png"
                     />
                 </div>
             </div>
