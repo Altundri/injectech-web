@@ -5,18 +5,15 @@ const navigation = {
         { name: 'Commerce', href: '#' },
         { name: 'Insights', href: '#' },
     ],
-    support: [
-        { name: 'Pricing', href: '#' },
-        { name: 'Documentation', href: '#' },
-        { name: 'Guides', href: '#' },
-        { name: 'API Status', href: '#' },
+    service: [
+        { name: 'Mobile App', href: '#' },
+        { name: 'Website', href: '#' },
+        { name: 'Videography', href: '#' },
+        { name: 'UI/UX Designer', href: '#' },
     ],
     company: [
         { name: 'About', href: '#' },
-        { name: 'Blog', href: '#' },
-        { name: 'Jobs', href: '#' },
-        { name: 'Press', href: '#' },
-        { name: 'Partners', href: '#' },
+        { name: 'Contact', href: '#' },
     ],
     legal: [
         { name: 'Claim', href: '#' },
@@ -116,9 +113,9 @@ export default function Footer() {
                                 </ul>
                             </div>
                             <div className="mt-10 md:mt-0">
-                                <h3 className="text-sm font-semibold leading-6 text-gray-900">Support</h3>
+                                <h3 className="text-sm font-semibold leading-6 text-gray-900">Service</h3>
                                 <ul role="list" className="mt-6 space-y-4">
-                                    {navigation.support.map((item) => (
+                                    {navigation.service.map((item) => (
                                         <li key={item.name}>
                                             <a href={item.href} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
                                                 {item.name}
