@@ -15,22 +15,18 @@ export default function Service() {
           <div className="grid grid-cols-4 gap-4 mt-24">
             <CardService
               title="Mobile App"
-              text="Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum"
               image="../src/assets/user-interface.png"
             />
             <CardService
               title="Website"
-              text="Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum"
               image="../src/assets/web-interface.png"
             />
             <CardService
               title="Videography"
-              text="Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum"
               image="../src/assets/videography.png"
             />
             <CardService
               title="UI/UX Designer"
-              text="Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum"
               image="../src/assets/uiux.png"
             />
           </div>

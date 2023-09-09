@@ -1,4 +1,5 @@
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
+import { CameraIcon, DevicePhoneMobileIcon, GlobeAltIcon, PhotoIcon } from '@heroicons/react/24/outline';
 
 export default function About() {
     return (
@@ -45,9 +46,8 @@ export default function About() {
                   Injectech Software House
                 </h1>
                 <p className="mt-6 text-xl leading-8 text-gray-700">
-                  Aliquet nec orci mattis amet quisque ullamcorper neque, nibh
-                  sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque
-                  id at vitae feugiat egestas.
+                Injectech adalah perusahaan IT Consultant yang didirikan pada tahun 2020 dan berkantor pusat di Palembang, Sumatera Selatan. Kami berspesialisasi dalam menyediakan 
+                solusi dan layanan IT yang komprehensif untuk bisnis di berbagai industri, membantu mereka menavigasi landskap digital yang terus berkembang.
                 </p>
               </div>
             </div>
@@ -62,74 +62,72 @@ export default function About() {
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div className="lg:pr-4">
               <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
-                <p>
-                  Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
-                  risus enim. Mattis mauris semper sed amet vitae sed turpis id.
-                  Id dolor praesent donec est. Odio penatibus risus viverra
-                  tellus varius sit neque erat velit. Faucibus commodo massa
-                  rhoncus, volutpat. Dignissim sed eget risus enim. Mattis
-                  mauris semper sed amet vitae sed turpis id.
-                </p>
                 <ul role="list" className="mt-8 space-y-8 text-gray-600">
                   <li className="flex gap-x-3">
-                    <CloudArrowUpIcon
+                    <DevicePhoneMobileIcon
                       className="mt-1 h-5 w-5 flex-none text-violet-600"
                       aria-hidden="true"
                     />
                     <span>
                       <strong className="font-semibold text-gray-900">
-                        Push to deploy.
+                      Pengembangan Aplikasi Seluler
                       </strong>{" "}
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Maiores impedit perferendis suscipit eaque, iste dolor
-                      cupiditate blanditiis ratione.
+                      <br />
+                      Injectech memanfaatkan teknologi mutakhir untuk menciptakan aplikasi seluler yang inovatif 
+                      dan ramah pengguna. Tim pengembang terampil kami berkomitmen untuk mengubah ide unik Anda 
+                      menjadi solusi seluler yang fungsional dan menarik, memastikan bisnis Anda tetap terdepan 
+                      di era mobile-first.
                     </span>
                   </li>
                   <li className="flex gap-x-3">
-                    <LockClosedIcon
+                    <GlobeAltIcon
                       className="mt-1 h-5 w-5 flex-none text-violet-600"
                       aria-hidden="true"
                     />
                     <span>
                       <strong className="font-semibold text-gray-900">
-                        SSL certificates.
+                        Pengembangan Situs Web
                       </strong>{" "}
-                      Anim aute id magna aliqua ad ad non deserunt sunt. Qui
-                      irure qui lorem cupidatat commodo.
+                      <br />
+                      Kami menciptakan pengalaman web yang berdampak dan meninggalkan kesan mendalam pada
+                      audiens target Anda. Layanan pengembangan situs web kami mencakup segala hal mulai dari 
+                      platform e-commerce hingga situs web yang kaya konten, dirancang untuk meningkatkan kehadiran 
+                      online Anda dan mendorong pertumbuhan bisnis.
                     </span>
                   </li>
                   <li className="flex gap-x-3">
-                    <ServerIcon
+                    <PhotoIcon
                       className="mt-1 h-5 w-5 flex-none text-violet-600"
                       aria-hidden="true"
                     />
                     <span>
                       <strong className="font-semibold text-gray-900">
-                        Database backups.
+                      Desain UI/UX
                       </strong>{" "}
-                      Ac tincidunt sapien vehicula erat auctor pellentesque
-                      rhoncus. Et magna sit morbi lobortis.
+                      <br />
+                      Antarmuka pengguna (UI) dan pengalaman pengguna (UX) adalah hal terpenting dalam 
+                      lanskap digital saat ini. Perancang UI/UX Injectech ahli dalam menciptakan antarmuka 
+                      yang intuitif dan menakjubkan secara visual, memastikan bahwa aplikasi dan situs web Anda 
+                      menyenangkan secara estetika dan ramah pengguna.
+                    </span>
+                  </li>
+                  <li className="flex gap-x-3">
+                    <CameraIcon
+                      className="mt-1 h-5 w-5 flex-none text-violet-600"
+                      aria-hidden="true"
+                    />
+                    <span>
+                      <strong className="font-semibold text-gray-900">
+                      Videografi Pemasaran Digital
+                      </strong>{" "}
+                      <br />
+                      Di era pemasaran digital, konten video adalah rajanya. Layanan videografi 
+                      kami dirancang untuk membantu bisnis menceritakan kisah mereka secara efektif 
+                      melalui konten visual yang menawan. Baik itu video promosi, demo produk, atau penceritaan merek, 
+                      kami memproduksi konten yang menarik dan mengonversi.
                     </span>
                   </li>
                 </ul>
-                <p className="mt-8">
-                  Et vitae blandit facilisi magna lacus commodo. Vitae sapien
-                  duis odio id et. Id blandit molestie auctor fermentum
-                  dignissim. Lacus diam tincidunt ac cursus in vel. Mauris
-                  varius vulputate et ultrices hac adipiscing egestas. Iaculis
-                  convallis ac tempor et ut. Ac lorem vel integer orci.
-                </p>
-                <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">
-                  No server? No problem.
-                </h2>
-                <p className="mt-6">
-                  Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam
-                  consequat in. Convallis arcu ipsum urna nibh. Pharetra,
-                  euismod vitae interdum mauris enim, consequat vulputate nibh.
-                  Maecenas pellentesque id sed tellus mauris, ultrices mauris.
-                  Tincidunt enim cursus ridiculus mi. Pellentesque nam sed
-                  nullam sed diam turpis ipsum eu a sed convallis diam.
-                </p>
               </div>
             </div>
           </div>
