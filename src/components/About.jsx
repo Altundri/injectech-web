@@ -1,4 +1,3 @@
-import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
 import { CameraIcon, DevicePhoneMobileIcon, GlobeAltIcon, PhotoIcon } from '@heroicons/react/24/outline';
 
 export default function About() {
