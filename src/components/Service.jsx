@@ -15,19 +15,19 @@ export default function Service() {
           <div className="grid grid-cols-4 gap-4 mt-24">
             <CardService
               title="Mobile App"
-              image="../src/assets/user-interface.png"
+              image="../public/assets/user-interface.png"
             />
             <CardService
               title="Website"
-              image="../src/assets/web-interface.png"
+              image="../public/assets/web-interface.png"
             />
             <CardService
               title="Videography"
-              image="../src/assets/videography.png"
+              image="../public/assets/videography.png"
             />
             <CardService
               title="UI/UX Designer"
-              image="../src/assets/uiux.png"
+              image="../public/assets/uiux.png"
             />
           </div>
         </div>

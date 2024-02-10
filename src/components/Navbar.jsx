@@ -16,10 +16,10 @@ export default function Navbar() {
         <header className="absolute inset-x-0 top-0 z-50">
             <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
                 <div className="flex lg:flex-1">
-                    <a href="#" className="flex items-center space-x-5 ">
+                    <a href="" className="flex items-center space-x-5 ">
                         <img
                             className="h-8 w-auto ml-14"
-                            src="../src/assets/logo.png"
+                            src="../public/assets/logo.png"
                             alt=""
                         />
                         <h1 className=' ml-30 text-2xl font-bold text-gray-900'>Injectech.</h1>
@@ -43,9 +43,6 @@ export default function Navbar() {
                     ))}
                 </div>
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                    <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                        Log in <span aria-hidden="true">&rarr;</span>
-                    </a>
                 </div>
             </nav>
             <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -56,7 +53,7 @@ export default function Navbar() {
                             <span className="sr-only">Your Company</span>
                             <img
                                 className="h-8 w-auto"
-                                src="../src/assets/logo.png"
+                                src="../public/assets/logo.png"
                                 alt=""
                             />
                         </a>
