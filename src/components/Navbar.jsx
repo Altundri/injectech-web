@@ -19,7 +19,7 @@ export default function Navbar() {
                     <a href="" className="flex items-center space-x-5 ">
                         <img
                             className="h-8 w-auto ml-14"
-                            src="../public/assets/logo.png"
+                            src="./public/assets/logo.png"
                             alt=""
                         />
                         <h1 className=' ml-30 text-2xl font-bold text-gray-900'>Injectech.</h1>
@@ -53,7 +53,7 @@ export default function Navbar() {
                             <span className="sr-only">Your Company</span>
                             <img
                                 className="h-8 w-auto"
-                                src="../public/assets/logo.png"
+                                src="./public/assets/logo.png"
                                 alt=""
                             />
                         </a>
