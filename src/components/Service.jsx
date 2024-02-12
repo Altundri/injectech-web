@@ -12,7 +12,7 @@ export default function Service() {
               Layanan kami yang akan menjadi solusi bagi masalah anda
             </p>
           </div>
-          <div className="grid grid-cols-4 gap-4 mt-24">
+          <div className=" grid md:grid-cols-4 sm:grid-cols-1 gap-4 mt-24 ">
             <CardService
               title="Mobile App"
               image="./assets/user-interface.png"

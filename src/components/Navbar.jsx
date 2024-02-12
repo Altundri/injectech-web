@@ -15,14 +15,14 @@ export default function Navbar() {
     return (
         <header className="absolute inset-x-0 top-0 z-50">
             <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
-                <div className="flex lg:flex-1">
-                    <a href="" className="flex items-center space-x-5 ">
+                <div className="flex-none md:flex-auto lg:flex-1">
+                    <a href="" className="flex items-center space-x-2">
                         <img
-                            className="h-8 w-auto ml-14"
+                            className="h-8 w-auto ml-2 md:ml-12 lg:ml-14"
                             src="./assets/logo.png"
                             alt=""
                         />
-                        <h1 className=' ml-30 text-2xl font-bold text-gray-900'>Injectech.</h1>
+                        <h1 className='ml-30 text-2xl font-bold text-gray-900'>Injectech.</h1>
                     </a>
                 </div>
                 <div className="flex lg:hidden">
