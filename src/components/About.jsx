@@ -1,8 +1,10 @@
+/* eslint-disable react/display-name */
 import { CameraIcon, DevicePhoneMobileIcon, GlobeAltIcon, PhotoIcon } from '@heroicons/react/24/outline';
+import { forwardRef } from 'react';
 
-export default function About() {
-    return (
-      <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+const About = forwardRef((props, ref) => {
+  return (
+      <div ref={ref} className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
         <div className="absolute inset-0 -z-10 overflow-hidden">
           <svg
             className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
@@ -45,8 +47,8 @@ export default function About() {
                   Injectech Software House
                 </h1>
                 <p className="mt-6 text-xl leading-8 text-gray-700">
-                Injectech adalah perusahaan IT Consultant yang didirikan pada tahun 2020 dan berkantor pusat di Palembang, Sumatera Selatan. Kami berspesialisasi dalam menyediakan 
-                solusi dan layanan IT yang komprehensif untuk bisnis di berbagai industri, membantu mereka menavigasi landskap digital yang terus berkembang.
+                  Injectech adalah perusahaan IT Consultant yang didirikan pada tahun 2020 dan berkantor pusat di Palembang, Sumatera Selatan. Kami berspesialisasi dalam menyediakan
+                  solusi dan layanan IT yang komprehensif untuk bisnis di berbagai industri, membantu mereka menavigasi landskap digital yang terus berkembang.
                 </p>
               </div>
             </div>
@@ -69,12 +71,12 @@ export default function About() {
                     />
                     <span>
                       <strong className="font-semibold text-gray-900">
-                      Pengembangan Aplikasi Seluler
+                        Pengembangan Aplikasi Seluler
                       </strong>{" "}
                       <br />
-                      Injectech memanfaatkan teknologi mutakhir untuk menciptakan aplikasi seluler yang inovatif 
-                      dan ramah pengguna. Tim pengembang terampil kami berkomitmen untuk mengubah ide unik Anda 
-                      menjadi solusi seluler yang fungsional dan menarik, memastikan bisnis Anda tetap terdepan 
+                      Injectech memanfaatkan teknologi mutakhir untuk menciptakan aplikasi seluler yang inovatif
+                      dan ramah pengguna. Tim pengembang terampil kami berkomitmen untuk mengubah ide unik Anda
+                      menjadi solusi seluler yang fungsional dan menarik, memastikan bisnis Anda tetap terdepan
                       di era mobile-first.
                     </span>
                   </li>
@@ -89,8 +91,8 @@ export default function About() {
                       </strong>{" "}
                       <br />
                       Kami menciptakan pengalaman web yang berdampak dan meninggalkan kesan mendalam pada
-                      audiens target Anda. Layanan pengembangan situs web kami mencakup segala hal mulai dari 
-                      platform e-commerce hingga situs web yang kaya konten, dirancang untuk meningkatkan kehadiran 
+                      audiens target Anda. Layanan pengembangan situs web kami mencakup segala hal mulai dari
+                      platform e-commerce hingga situs web yang kaya konten, dirancang untuk meningkatkan kehadiran
                       online Anda dan mendorong pertumbuhan bisnis.
                     </span>
                   </li>
@@ -101,12 +103,12 @@ export default function About() {
                     />
                     <span>
                       <strong className="font-semibold text-gray-900">
-                      Desain UI/UX
+                        Desain UI/UX
                       </strong>{" "}
                       <br />
-                      Antarmuka pengguna (UI) dan pengalaman pengguna (UX) adalah hal terpenting dalam 
-                      lanskap digital saat ini. Perancang UI/UX Injectech ahli dalam menciptakan antarmuka 
-                      yang intuitif dan menakjubkan secara visual, memastikan bahwa aplikasi dan situs web Anda 
+                      Antarmuka pengguna (UI) dan pengalaman pengguna (UX) adalah hal terpenting dalam
+                      lanskap digital saat ini. Perancang UI/UX Injectech ahli dalam menciptakan antarmuka
+                      yang intuitif dan menakjubkan secara visual, memastikan bahwa aplikasi dan situs web Anda
                       menyenangkan secara estetika dan ramah pengguna.
                     </span>
                   </li>
@@ -117,12 +119,12 @@ export default function About() {
                     />
                     <span>
                       <strong className="font-semibold text-gray-900">
-                      Videografi Pemasaran Digital
+                        Videografi Pemasaran Digital
                       </strong>{" "}
                       <br />
-                      Di era pemasaran digital, konten video adalah rajanya. Layanan videografi 
-                      kami dirancang untuk membantu bisnis menceritakan kisah mereka secara efektif 
-                      melalui konten visual yang menawan. Baik itu video promosi, demo produk, atau penceritaan merek, 
+                      Di era pemasaran digital, konten video adalah rajanya. Layanan videografi
+                      kami dirancang untuk membantu bisnis menceritakan kisah mereka secara efektif
+                      melalui konten visual yang menawan. Baik itu video promosi, demo produk, atau penceritaan merek,
                       kami memproduksi konten yang menarik dan mengonversi.
                     </span>
                   </li>
@@ -132,5 +134,7 @@ export default function About() {
           </div>
         </div>
       </div>
-    );
-}
+  );
+});
+
+export default About;

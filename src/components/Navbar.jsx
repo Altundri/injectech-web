@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable react/prop-types */
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
@@ -9,8 +11,12 @@ const navigation = [
     { name: 'Contact', href: '#' },
 ]
 
-export default function Navbar() {
+const Navbar = ({ resultRef }) => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
+    const handleClick = (ref) => {
+        resultRef(ref);
+      };
 
     return (
         <header className="absolute inset-x-0 top-0 z-50">
@@ -36,11 +42,15 @@ export default function Navbar() {
                     </button>
                 </div>
                 <div className="hidden lg:flex lg:gap-x-12">
-                    {navigation.map((item) => (
-                        <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
+                    {/* {navigation.map((item) => (
+                        <a key={item.name}  className="text-sm font-semibold leading-6 text-gray-900">
                             {item.name}
                         </a>
-                    ))}
+                    ))} */}
+                    <button>Home</button>
+                    <button onClick={() => handleClick("servicesRef")}>Services</button>
+                    <button onClick={() => handleClick("aboutRef")}>Company</button>
+                    <button onClick={() => handleClick("contactRef")}>Contact</button>
                 </div>
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
                 </div>
@@ -79,14 +89,6 @@ export default function Navbar() {
                                     </a>
                                 ))}
                             </div>
-                            <div className="py-6">
-                                <a
-                                    href="#"
-                                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                                >
-                                    Log in
-                                </a>
-                            </div>
                         </div>
                     </div>
                 </Dialog.Panel>
@@ -94,3 +96,4 @@ export default function Navbar() {
         </header>
     )
 }
+export default Navbar;

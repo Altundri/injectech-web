@@ -1,18 +1,18 @@
+/* eslint-disable react/display-name */
 
-import { useRef, useState } from 'react'
+import { useState } from 'react'
 import { Switch } from '@headlessui/react'
+import { forwardRef } from 'react';
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-export default function Contact() {
+const Contact = forwardRef((props, ref) => {
     const [agreed, setAgreed] = useState(false)
-    
-    const contact = useRef()
 
     return (
-        <div ref={contact.current} className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+        <div ref={ref} className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
             <div
                 className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
                 aria-hidden="true"
@@ -172,4 +172,6 @@ export default function Contact() {
             </form>
         </div>
     )
-}
+});
+
+export default Contact
